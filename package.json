@@ -1,0 +1,22 @@
+{
+  "name": "dpoautomationproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qajass/dpoautomationproject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qajass/dpoautomationproject/issues"
+  },
+  "homepage": "https://github.com/qajass/dpoautomationproject#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.0"
+  }
+}
