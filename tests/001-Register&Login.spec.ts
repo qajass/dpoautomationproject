@@ -16,7 +16,7 @@ test('Register with random data and login using the same credentials', async ({ 
   const lastName = `LN_${randomString(5)}`;
   const email = randomEmail();
   const phone = randomPhone();
-  const password = '@Qwerty543!'; // keep password fixed for simplicity
+  const password = '@Qwerty543!';
 
 //Logs
 console.log({ firstName, lastName, email, phone, password });
@@ -34,7 +34,7 @@ await expect(page.locator('#userEmail')).toBeVisible();
 await page.locator('#firstName').fill(firstName);
 await page.locator('#lastName').fill(lastName);
 await page.locator('#userEmail').fill(email);
-await page.locator('#userMobile').fill(phone); // adjust selector if different
+await page.locator('#userMobile').fill(phone);
 await page.locator('#userPassword').fill(password);
 await page.locator('#confirmPassword').fill(password);
 await page.locator('//input[@value="Male"]').click();
@@ -44,7 +44,7 @@ await page.locator('//input[@type="checkbox"]').click();
 // 🔹 Register
 await page.locator('#login').click();
 
-// Wait for registration success (adjust locator as needed)
+// Wait for registration success
 await expect(page.locator('//h1[normalize-space()="Account Created Successfully"]')).toBeVisible({ timeout: 15000 });
 
 //Return to Login
